@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+  background-color: #f3f5f7;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.bg-body-tertiary {
+  background-color: #fff !important;
+  /* 用户 */
+}
+.bg-body-tertiary .navbar-brand {
+  margin-left: 5%;
+  margin-right: 80px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../image/logo.jpg);
+  background-size: cover;
+  /* 尝试覆盖整个容器，但保持宽高比，可能会裁剪 */
+}
+.bg-body-tertiary .nav-item {
+  width: 75px;
+  height: 64px;
+  text-align: center;
+  margin-right: 16px;
+}
+.bg-body-tertiary .nav-item a {
+  font: size 19px;
+  padding: 6px 8px;
+  line-height: 50px;
+}
+.bg-body-tertiary .nav-item a:hover {
+  border-bottom: 2px solid #20b77884;
+}
+.bg-body-tertiary .nav-item .active {
+  border-bottom: 2px solid #20b77884;
+}
+.bg-body-tertiary .search {
+  padding: 0 12px;
+  /* 简化内边距设置，使左右内边距相同 */
+  width: auto;
+  min-width: 348px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f3f5f7;
+  border-radius: 20px;
+}
+.bg-body-tertiary .search .d-flex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.bg-body-tertiary .search .d-flex .form-control {
+  flex: 1;
+  border: none;
+  /* 使用none代替0，更清晰表达没有边框 */
+  background-color: transparent;
+  /* 去掉焦点框 */
+  outline: none;
+  /* 添加一些内边距以改善文本的可读性 */
+  font-size: 14px;
+  color: #333;
+}
+.bg-body-tertiary .search .d-flex .form-control::placeholder {
+  font-size: 14px;
+  color: #999;
+}
+.bg-body-tertiary .search .d-flex .btn {
+  /* 移除对.iconfont的直接样式设置，因为图标现在位于button内 */
+  border: none;
+  /* 移除按钮的默认边框 */
+  background-color: transparent;
+  /* 移除按钮的背景色，使其透明 */
+  padding: 0;
+  /* 移除按钮的内边距，因为我们将使用图标的大小和位置 */
+  cursor: pointer;
+  /* 鼠标悬停时显示指针，表示可点击 */
+}
+.bg-body-tertiary .search .d-flex .btn .iconfont {
+  font-size: 18px;
+  color: rgba(32, 183, 120, 0.52);
+}
+.bg-body-tertiary .user {
+  margin: auto;
+  text-align: center;
+}
+.bg-body-tertiary .user a {
+  display: block;
+  margin: 0 auto;
+}
+.bg-body-tertiary .user a .iconfont {
+  font-size: 25px;
+}
+.bg-body-tertiary .user a span {
+  font-size: 12px;
+  color: #666;
+}
+.course {
+  margin-top: 100px;
+  text-align: center;
+}
+.course .hd {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  line-height: 60px;
+}
+.course .hd h3 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.course .hd .more {
+  font-size: 16px;
+  color: #999;
+}
+.course .hd .more .iconfont {
+  font-size: 16px;
+  color: #999;
+  margin-left: 20px;
+}
+.course .bd a {
+  display: block;
+  width: 285px;
+  height: 340px;
+  background-color: #00a4ff;
+  margin: 0 auto 15px;
+  border: 1px solid #349358;
+  /* 设置过渡效果，当transform属性变化时应用 */
+  transition: transform 0.5s ease;
+  /* 持续时间0.5秒，使用ease速度曲线 */
+}
+.course .bd a:hover {
+  transform: scale(1.1);
+}
+.course .bd a .pic {
+  height: 192px;
+}
+.course .bd a .bd-info {
+  height: 145px;
+  padding: 20px;
+  background-color: #fff;
+}
+.course .bd a .bd-info h4 {
+  /* margin-bottom: 20px; */
+  height: 80px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.course .bd a .bd-info p {
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}
+.course .bd a .bd-info p span {
+  color: #ae9e43;
+}
+/* 信息简介区域 */
+.fonter {
+  margin-top: 60px;
+  background-color: #fff;
+}
+.fonter .wrapper {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  justify-content: space-around;
+}
+.fonter .left {
+  width: 300px;
+  /* background-color: #00a4ff; */
+  /* display: flex; */
+}
+.fonter .left img {
+  height: 200px;
+}
+.fonter .right p {
+  /* margin-top: 24px; */
+  margin: 0 auto 15px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #666;
+}
+@media (max-width: 875px) {
+  .fonter .left {
+    display: none;
+  }
+  .fonter .right p i {
+    display: none;
+  }
+}
+/* 版权 */
+.copyright {
+  height: 80px;
+  text-align: center;
+  margin-top: 40px;
+}
+.copyright p {
+  color: #a1a1a1;
+  margin-bottom: 10px;
+}
+.copyright p a {
+  color: #a1a1a1;
+  margin: 0 10px;
+}
+.copyright p ahover {
+  /* border-bottom: 2px solid #20b77884; */
+  color: #000;
+}
