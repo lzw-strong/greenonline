@@ -45,7 +45,7 @@ submit.addEventListener("submit", function (e) {
     // 验证账号密码是否为空或者错误
     function comparePnAndPw() {
         if (!phone.value.trim() || !password.value.trim()) {
-            alert("请填写账号和密码");
+            // alert("请填写账号和密码");
             return false
         }
         if (phone.value !== dataPhone || password.value !== dataPassword) {
