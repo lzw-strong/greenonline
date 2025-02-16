@@ -62,7 +62,7 @@ function verifyPwd() {
     // 定义正则 密码
     const reg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,20}$/
     if (!reg.test(password.value)) {
-        div.innerHTML = "密码不符合要求，请包含大小写字母、数字和特殊字符"
+        div.innerHTML = "密码需包含大小写字母、数字和特殊字符"
         return false
     }
     // 合法的密码 清空提示
