@@ -24,9 +24,9 @@ password.addEventListener("change", verifyPwd)
 function verifyPwd() {
     const div = password.nextElementSibling
     // 定义正则 密码
-    const reg = /^[a-zA-Z0-9-._]{6,20}$/
+    const reg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*+.]).{6,20}$/
     if (!reg.test(password.value)) {
-        div.innerHTML = "请输入6~20位数字字母符号组成的密码"
+        div.innerHTML = "请输入6~20位数字字母和特殊符号组成的密码"
         return false
     }
     // 合法的密码 清空提示
