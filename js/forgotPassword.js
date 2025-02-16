@@ -104,7 +104,7 @@ function validatePhone(phone) {
 
 // 密码正则
 function validatePassword(password) {
-    return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,20}$/.test(password);
+    return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*+.]).{6,20}$/.test(password);
 }
 
 // 展示错误信息
