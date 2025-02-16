@@ -60,7 +60,7 @@ password.addEventListener("change", verifyPwd)
 function verifyPwd() {
     const div = password.nextElementSibling
     // 定义正则 密码
-    const reg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,20}$/
+    const reg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*+.]).{6,20}$/
     if (!reg.test(password.value)) {
         div.innerHTML = "密码需包含大小写字母、数字和特殊字符"
         return false
