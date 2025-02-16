@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 描述 -->
+    <meta name="description" content="“Green Online”平台，一个集教学、培训与互动于一体的综合性国际中文教育平台。
+    它不仅为新手教师提供全面教学资源和分阶段培养方案，还通过模拟课堂、直播授课等形式，促进教学质量提升。 同时，平台创新教学模式，以兴趣为导向，增强学生学习动力。
+    此外，开放共享的社区环境让教师们跨越地域界限，共享经验，共谋发展，共同推动国际中文教育的繁荣与进步。">
+    <title>“Green Online”一个面向国际中文教育新手教师和以汉语为第二语言的学习者的国际中文教育新手教师教学和训练平台</title>
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+
+<body>
+    <div class="wall-warp container">
+        <form action="" name="registrationForm" method="get">
+            <!-- logo区域 -->
+            <div class="wall-logo">
+                <a href="./index.html">
+                    <img src="./image/logo.jpg" alt="logo">
+                    <div>Green Online</div>
+                </a>
+            </div>
+
+            <!-- 手机号及注册 -->
+            <div class="wall-mr">
+                <ul>
+                    <li class="wall-mrPhone"><a href="./login.html">手机号</a></li>
+                    <li class="wall-mrRegister"><a href="./register.html">注册</a></li>
+                </ul>
+            </div>
+
+            <!-- 输入区域 -->
+            <div class="wall-input">
+                <label for="wall-input-phone">
+                    <span>手机号</span>
+                    <input type="text" id="wall-input-phone" placeholder="请输入手机号" name="phone">
+                    <div class="error-message"></div>
+                </label>
+
+                <label for="wall-input-password">
+                    <span>密码</span>
+                    <input type="password" id="wall-input-password" placeholder="请输入密码" name="password">
+                    <div class="error-message"></div>
+                </label>
+
+                <label for="wall-input-num">
+                    <span>验证码</span>
+                    <input type="text" id="wall-input-num" placeholder="请输入手机验证码" name="code">
+                    <div class="error-message"></div>
+                </label>
+
+                <button type="button" class="getCode">获取验证码</button>
+            </div>
+
+
+            <!-- 注册按钮 -->
+            <div class=" wall-buo">
+                <button class="wall-active" type="submit">注 册</button>
+            </div>
+
+
+            <!-- 用户协议 -->
+            <div class="wall-ug">
+                <label>
+                    <input type="checkbox" name="agreementCheckbox">
+                    请阅读并同意
+                    <a href="./userAgreement.html" class="wall-active" target="_blank">《国际中文教育新手教师教学训练平台用户协议》</a>
+                </label>
+            </div>
+
+            <!-- 帮助 -->
+            <div class="wall-help">
+                <span>如登录，注册遇到问题，请<a href="" class="wall-help-contact">联系我们</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

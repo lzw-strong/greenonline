@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频课程 - Green Online</title>
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+    <link rel="stylesheet" href="./css/video.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container wrapper">
+            <!-- logo -->
+            <a class="navbar-brand" href="./index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <!-- 主页 -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./collectionArea.html">订阅区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./commentSection.html">讨论区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./personalCenter.html">我的</a>
+                    </li>
+                </ul>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="请输入关键词" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <span class="iconfont icon-sousuo"></span>
+                        </button>
+                    </form>
+                </div>
+                <!-- 用户 -->
+                <div class="user">
+                    <a href="#">
+                        <div class="iconfont icon-geren"></div>
+                        <span>登录/注册</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 视频主体 -->
+    <div class="container wrapper" style="margin-top: 80px;">
+        <!-- 视频播放器 -->
+        <div class="video-container">
+            <video controls poster="./uploads/video-poster.jpg">
+                <source src="./videos/lesson-1.mp4" type="video/mp4">
+                <track label="中文" kind="subtitles" srclang="zh" src="./videos/subtitles.vtt" default>
+                您的浏览器不支持视频播放
+            </video>
+        </div>
+
+        <!-- 课程信息 -->
+        <div class="course-info">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>XXXX</h1>
+                    <div class="d-flex align-items-center mt-3">
+                        <span class="badge bg-success me-3">高级课程</span>
+                        <span class="text-muted me-3"><i class="iconfont icon-liulan"></i> 11451次观看</span>
+                        <span class="text-muted"><i class="iconfont icon-shijian"></i> 更新于2025-2-12</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <button class="btn btn-outline-primary me-2"><i class="iconfont icon-shoucang"></i> 收藏课程</button>
+                    <button class="btn btn-primary"><i class="iconfont icon-xiazai"></i> 下载资料</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 课程章节 -->
+        <div class="chapter-list card">
+            <div class="card-header bg-white">
+                <h4 class="mb-0">课程章节（共8节）</h4>
+            </div>
+            <div class="card-body">
+                <div class="chapter-item active-chapter">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-primary me-3">01</span>
+                            XXXXXXX
+                        </div>
+                        <span class="text-muted">25:30</span>
+                    </div>
+                </div>
+                <div class="chapter-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-primary me-3">02</span>
+                            XXXXXXX
+                        </div>
+                        <span class="text-muted">25:30</span>
+                    </div>
+                </div>
+                <div class="chapter-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-primary me-3">03</span>
+                            XXXXXXX
+                        </div>
+                        <span class="text-muted">25:30</span>
+                    </div>
+                </div>
+                <div class="chapter-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-primary me-3">04</span>
+                            XXXXXXX
+                        </div>
+                        <span class="text-muted">25:30</span>
+                    </div>
+                </div>
+                <div class="chapter-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-primary me-3">05</span>
+                            XXXXXXX
+                        </div>
+                        <span class="text-muted">25:30</span>
+                    </div>
+                </div>
+                <div class="chapter-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-primary me-3">06</span>
+                            XXXXXXX
+                        </div>
+                        <span class="text-muted">25:30</span>
+                    </div>
+                </div>
+                <div class="chapter-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-primary me-3">07</span>
+                            XXXXXXX
+                        </div>
+                        <span class="text-muted">25:30</span>
+                    </div>
+                </div>
+                <div class="chapter-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-primary me-3">08</span>
+                            XXXXXXX
+                        </div>
+                        <span class="text-muted">25:30</span>
+                    </div>
+                </div>
+
+                <!-- 更多章节... -->
+            </div>
+        </div>
+
+        <!-- 课程简介 -->
+        <div class="card mt-4">
+            <div class="card-header bg-white">
+                <h4>课程简介</h4>
+            </div>
+            <div class="card-body">
+                <p>本课程系统讲解XXXXX的教学方法，通过实际案例演示如何有效进行对外汉语语法教学...</p>
+            </div>
+        </div>
+
+        <!-- 评论区域 -->
+        <div class="card mt-4">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">课程讨论（256条）</h4>
+                <a href="./commentSection.html" class="btn btn-link">查看全部</a>
+            </div>
+            <div class="card-body">
+                <!-- 评论列表 -->
+                <div class="comment-item">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <img src="./images/avatar.png" width="40" class="rounded-circle">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h6>李老师</h6>
+                            <p class="text-muted">非常实用的教学示范，特别是课堂互动部分很有启发！</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多评论... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 版权 -->
+    <div class="copyright">
+        <div class="container wrapper">
+            <p>
+                <a href="#">关于我们</a>|
+                <a href="./copyrightNotice.html" target="_blank">版权说明</a>|
+                <a href="./privacyPolicy.html" target="_blank">隐私协议</a>|
+                <a href="./userAgreement.html" target="_blank">用户协议</a>
+            </p>
+            <p>copyright @ 国际中文教育新手教师教学和训练平台制作团队</p>
+        </div>
+    </div>
+
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/afterLogin.js"></script>
+</body>
+
+</html>

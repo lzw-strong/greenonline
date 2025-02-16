@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Online国际中文教育新手教师教学和训练平台</title>
+    <!-- 描述 -->
+    <meta name="description" content="“Green Online”平台，一个集教学、培训与互动于一体的综合性国际中文教育平台。
+    它不仅为新手教师提供全面教学资源和分阶段培养方案，还通过模拟课堂、直播授课等形式，促进教学质量提升。 同时，平台创新教学模式，以兴趣为导向，增强学生学习动力。
+    此外，开放共享的社区环境让教师们跨越地域界限，共享经验，共谋发展，共同推动国际中文教育的繁荣与进步。">
+    <!-- 关键字 -->
+    <meta name="keywords" content="Green Online、面向国际中文教育、以汉语为第二语言、国际中文教育平台、新手教师教学和训练平台">
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/personalCenter.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/accountSecurity.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container wrapper">
+            <!-- logo -->
+            <a class="navbar-brand" href="./index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- 导航栏 -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./collectionArea.html">订阅区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./commentSection.html">讨论区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./personalCenter.html">我的</a>
+                    </li>
+                </ul>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="请输入关键词" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <span class="iconfont icon-sousuo"></span>
+                        </button>
+                    </form>
+                </div>
+                <!-- 用户 -->
+                <div class="user">
+                    <a href="#">
+                        <div class="iconfont icon-geren"></div>
+                        <span>登录/注册</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 个人中心主体内容 -->
+    <main class="personal-main">
+        <div class="container wrapper mt-5 pt-4">
+            <!-- 用户信息卡片 -->
+            <div class="card profile-card shadow-sm">
+                <div class="card-body d-flex align-items-center">
+                    <div class="avatar me-4">
+                        <img src="./image/default-avatar.png" class="rounded-circle" alt="用户头像" width="80">
+                    </div>
+                    <div>
+                        <h4 class="mb-1">李晓明老师</h4>
+                        <p class="text-muted mb-0">国际中文教育 | 教龄2年</p>
+                        <small id="lastLoginTime" class="text-success">上次登录：2023-10-15 14:30</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 双栏布局 -->
+            <div class="row g-4 mt-3">
+                <!-- 左侧导航 -->
+                <div class="col-lg-2">
+                    <div class="list-group">
+                        <a href="./personalCenter.html" class="list-group-item list-group-item-action">
+                            <i class="iconfont icon-geren me-2"></i>个人资料
+                        </a>
+                        <a href="./accountSecurity.html" class="list-group-item list-group-item-action active">
+                            <i class="iconfont icon-safety me-2"></i>账号安全
+                        </a>
+                        <a href="./collectionArea.html" class="list-group-item list-group-item-action">
+                            <i class="iconfont icon-subscribe me-2"></i>我的订阅
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="iconfont icon-message me-2"></i>消息通知
+                            <span class="badge bg-danger float-end">2</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- 右侧内容 -->
+                <div class="col-lg-9">
+                    <!-- 账号安全表单 -->
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">账号安全</h5>
+                            <form class="row g-3 mt-2">
+                                <div class="col-12">
+                                    <h6 class="text-muted mb-3">一、修改密码</h6>
+                                    <div class="col-md-12">
+                                        <label class="form-label">旧密码</label>
+                                        <input type="password" class="form-control" name="旧密码" placeholder="请输入旧密码">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">新密码</label>
+                                        <input type="password" class="form-control" name="新密码" placeholder="请输入新密码">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">确认新密码</label>
+                                        <input type="password" class="form-control" name="确认新密码" placeholder="请再次输入新密码">
+                                    </div>
+                                    <div class="col-12 text-end mt-3">
+                                        <span class="text-active">密码应包含大小写字母、数字和特殊字符，长度为6-20位</span>
+                                        <button type="submit" class="btn btn-success mt-3">保存修改</button>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h6 class="text-muted mb-3">二、修改手机号</h6>
+                                    <div class="col-md-12">
+                                        <label class="form-label">当前手机号</label>
+                                        <input type="text" class="form-control" name="当前手机号" value="138****8888"
+                                            disabled>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">新手机号</label>
+                                        <input type="text" class="form-control" name="新手机号" id="newPhone"
+                                            placeholder="请输入新手机号">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">验证码</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="验证码" placeholder="请输入验证码">
+                                            <button class="btn btn-outline-success" id="getCodeBtn"
+                                                type="button">获取验证码</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-end mt-3">
+                                        <button type="submit" class="btn btn-success">保存修改</button>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h6 class="text-muted mb-3">三、密保问题设置</h6>
+                                    <div class="col-md-12">
+                                        <label class="form-label">问题1</label>
+                                        <select class="form-select" name="问题1">
+                                            <option>请选择问题</option>
+                                            <option>您的小学班主任叫什么名字？</option>
+                                            <option>您母亲的生日是？</option>
+                                            <option>您小学时最好的朋友叫什么名字？</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">答案1</label>
+                                        <input type="text" class="form-control" name="答案1" placeholder="请输入答案">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">问题2</label>
+                                        <select class="form-select" name="问题2">
+                                            <option>请选择问题</option>
+                                            <option>您父亲的生日是？</option>
+                                            <option>您初恋的名字是什么？</option>
+                                            <option>您小学时最喜欢的颜色是什么？</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">答案2</label>
+                                        <input type="text" class="form-control" name="答案2" placeholder="请输入答案">
+                                    </div>
+                                    <div class="col-12 text-end mt-3">
+                                        <button type="submit" class="btn btn-success">保存修改</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/personalCenter.js"></script>
+    <script src="./js/afterLogin.js"></script>
+    <script src="./js/checkUserLogin.js"></script>
+    <script src="./js/accountSecurity.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讨论区</title>
+    <!-- 描述 -->
+    <meta name="description" content="“Green Online”平台，一个集教学、培训与互动于一体的综合性国际中文教育平台。
+    它不仅为新手教师提供全面教学资源和分阶段培养方案，还通过模拟课堂、直播授课等形式，促进教学质量提升。 同时，平台创新教学模式，以兴趣为导向，增强学生学习动力。
+    此外，开放共享的社区环境让教师们跨越地域界限，共享经验，共谋发展，共同推动国际中文教育的繁荣与进步。">
+    <!-- 关键字 -->
+    <meta name="keywords" content="Green Online、面向国际中文教育、以汉语为第二语言、国际中文教育平台、新手教师教学和训练平台">
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/commentSection.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container wrapper">
+            <!-- logo -->
+            <a class="navbar-brand" href="./index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <!-- 主页 -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./collectionArea.html">订阅区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./commentSection.html">讨论区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./personalCenter.html">我的</a>
+                    </li>
+                </ul>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="请输入关键词" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <span class="iconfont icon-sousuo"></span>
+                        </button>
+                    </form>
+                </div>
+                <!-- 用户 -->
+                <div class="user">
+                    <a href="#">
+                        <div class="iconfont icon-geren"></div>
+                        <span>登录/注册</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 讨论区域 -->
+    <div class="discussion-area">
+        <div class="container wrapper">
+            <span>快来发表您的评论吧</span>
+            <!-- 评论框 -->
+            <div class="comment-form">
+                <textarea id="commentContent" placeholder="在此处输入评论内容"></textarea>
+                <div class="wrapper-total">
+                    <i class="total">0/200字</i>
+                </div>
+
+                <div class="btn-right">
+                    <button onclick="addComment()">提交评论</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 评论列表 -->
+        <ul class="comment-list" id="commentList">
+            <!-- 这里将显示评论 -->
+        </ul>
+    </div>
+
+    <!-- 信息简介 -->
+    <div class="fonter">
+        <div class="container wrapper">
+            <div class="left">
+                <a href=""><img src="./image/logo.jpg" alt="logo"></a>
+            </div>
+            <div class="right">
+                <p>
+                    在“Green Online”国际中文教育平台，我们鼓励友好交流，共享学习乐趣。
+                    <br>&ensp;&ensp;请遵循以下简单公约：<br>
+                    <i>
+                        &ensp;&ensp; 1.尊重他人：无论观点如何，都要以礼相待，避免冲突。<br>
+                    </i>
+                    <i>
+                        &ensp;&ensp; 2.分享价值：分享有用的学习资料、心得或文化见解。<br>
+                    </i>
+                    <i>
+                        &ensp;&ensp; 3.积极互动：对他人提问给予回应，共同促进学习。<br>
+                    </i>
+                    <i>
+                        &ensp;&ensp; 4.遵守规则：不发布违法、不良或侵犯隐私的内容。
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 版权 -->
+    <div class="copyright">
+        <div class="container wrapper">
+            <p>
+                <a href="#">关于我们</a>|
+                <a href="./copyrightNotice.html" target="_blank">版权说明</a>|
+                <a href="./privacyPolicy.html" target="_blank">隐私协议</a>|
+                <a href="./userAgreement.html" target="_blank">用户协议</a>
+            </p>
+            <p>copyright @ 国际中文教育新手教师教学和训练平台制作团队</p>
+        </div>
+    </div>
+
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./js/commentSection.js"></script>
+    <script src="./js/checkUserLogin.js"></script>
+    <script src="./js/afterLogin.js"></script>
+</body>
+
+</html>
